@@ -1,0 +1,74 @@
+Mar-25 14:08:19.439 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastq2vcf.nf --single false --read1 /mnt/storage10/lwang/Projects/Nextflow/data/ERR6634978_1.fastq.gz --read2 /mnt/storage10/lwang/Projects/Nextflow/data/ERR6634978_2.fastq.gz --prefix ERR6634978 --ref /mnt/storage10/lwang/Projects/Nextflow/data/MTB-h37rv_asm19595v2-eg18.fa
+Mar-25 14:08:19.500 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Mar-25 14:08:19.514 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/mnt/storage10/lwang/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Mar-25 14:08:19.522 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-25 14:08:19.523 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-25 14:08:19.525 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-25 14:08:19.536 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-25 14:08:19.591 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-25 14:08:19.604 [main] INFO  nextflow.cli.CmdRun - Launching `fastq2vcf.nf` [elated_hopper] DSL2 - revision: dba41dfb1f
+Mar-25 14:08:19.605 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-25 14:08:19.605 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-25 14:08:19.611 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /mnt/storage10/lwang/.nextflow/secrets/store.json
+Mar-25 14:08:19.615 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@488b50ec] - activable => nextflow.secret.LocalSecretsProvider@488b50ec
+Mar-25 14:08:19.656 [main] DEBUG nextflow.Session - Session UUID: 66ee741a-68a5-4c15-aaa4-479e6d18bd58
+Mar-25 14:08:19.656 [main] DEBUG nextflow.Session - Run name: elated_hopper
+Mar-25 14:08:19.657 [main] DEBUG nextflow.Session - Executor pool size: 128
+Mar-25 14:08:19.662 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-25 14:08:19.666 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=384; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-25 14:08:19.686 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC 
+  System: Linux 5.4.0-110-generic
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 1020739@s10 [127.0.1.1]
+  CPUs: 128 - Mem: 1007.6 GB (123.6 GB) - Swap: 8 GB (770.4 MB)
+Mar-25 14:08:19.707 [main] DEBUG nextflow.Session - Work-dir: /mnt/storage10/lwang/Projects/Nextflow/work [ext2/ext3]
+Mar-25 14:08:19.708 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/storage10/lwang/Projects/Nextflow/bin
+Mar-25 14:08:19.716 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-25 14:08:19.723 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-25 14:08:19.750 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-25 14:08:19.758 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 129; maxThreads: 1000
+Mar-25 14:08:19.800 [main] DEBUG nextflow.Session - Session start
+Mar-25 14:08:20.284 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-25 14:08:20.369 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-25 14:08:20.369 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-25 14:08:20.373 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-25 14:08:20.378 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=128; memory=1007.6 GB; capacity=128; pollInterval=100ms; dumpInterval=5m
+Mar-25 14:08:20.380 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-25 14:08:20.441 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: TrimReads
+Mar-25 14:08:20.441 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Mar-25 14:08:20.442 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TrimReads
+Mar-25 14:08:20.442 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_ebb2ccfec9660380: /mnt/storage10/lwang/Projects/Nextflow/fastq2vcf.nf
+Mar-25 14:08:20.442 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-25 14:08:20.443 [main] DEBUG nextflow.Session - Session await
+Mar-25 14:08:20.496 [Actor Thread 3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=TrimReads (1); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'ERR6634978'
+Mar-25 14:08:20.504 [Actor Thread 3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'TrimReads (1)'
+
+Caused by:
+  Not a valid path value: 'ERR6634978'
+
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Mar-25 14:08:20.507 [Actor Thread 3] DEBUG nextflow.Session - Session aborted -- Cause: Not a valid path value: 'ERR6634978'
+Mar-25 14:08:20.520 [Actor Thread 3] DEBUG nextflow.Session - The following nodes are still active:
+[process] TrimReads
+  status=ACTIVE
+  port 0: (queue) closed; channel: read1
+  port 1: (queue) OPEN  ; channel: read2
+  port 2: (queue) OPEN  ; channel: prefix
+  port 3: (cntrl) -     ; channel: $
+
+Mar-25 14:08:20.521 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-25 14:08:20.521 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-25 14:08:20.521 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-25 14:08:20.523 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=TrimReads; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Mar-25 14:08:20.526 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-25 14:08:20.718 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-25 14:08:20.735 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
